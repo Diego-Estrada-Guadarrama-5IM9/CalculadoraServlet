@@ -3,15 +3,7 @@
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script> 
-           var opreacion = document.getElementsByName("operacion");
-            var suma = document.getElementById("sum");
-            function rellenar () {
-                if(suma.click()){
-                    opreacion.value ="+";
-                }
-            };
-        </script>
+        <script src="newjavascript.js"></script>
         <link rel="stylesheet" href="css.css">
     </head>
     <body>
@@ -19,21 +11,21 @@
         <form method="POST" action="ServletOpera" onchange="rellenar()"><br><br>
                 Numero 1 <input type="number" name="numero1" value="0" class="numero"> <br>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="text" name="operacion" size="3" class="numero"> <br>
+                <input value="" type="text" id="operacion" name="operacion" size="3" class="numero"> <br>
                 Numero 2 <input type="number" name="numero2" value="0" class="numero"> 
                 <input type="reset" value="Limpiar"> <br> <br>
                 <input type="submit" value="Enivar"> <br> <br>
                 
-                <input type="button" value="+" id="sum" class="Operaciones" onclick="rellenar()">
-                <input type="button" value="-" name="-" class="Operaciones">
-                <input type="button" value="*" name="*" class="Operaciones">
-                <input type="button" value="/" name="/" class="Operaciones">
-                <input type="button" value="sen" name="sen" class="Operaciones">
-                <input type="button" value="cos" name="cos" class="Operaciones">
-                <input type="button" value="tan" name="tan" class="Operaciones">
-                <input type="button" value="arsen" name="arcsen" class="Operaciones">
-                <input type="button" value="arcos" name="arcos" class="Operaciones">
-                <input type="button" value="arctan" name="arctan" class="Operaciones">
+                <input type="button" value="+" name="-" class="Operaciones" onclick="rellenarSum()">
+                <input type="button" value="-" name="-" class="Operaciones" onclick="rellenarRes()">
+                <input type="button" value="*" name="*" class="Operaciones" onclick="rellenarMul()">
+                <input type="button" value="/" name="/" class="Operaciones" onclick="rellenarDiv()">
+                <input type="button" value="sen" name="sen" class="Operaciones" onclick="rellenarSen()">
+                <input type="button" value="cos" name="cos" class="Operaciones" onclick="rellenarCos()">
+                <input type="button" value="tan" name="tan" class="Operaciones" onclick="rellenarTan()">
+                <input type="button" value="arsen" name="arcsen" class="Operaciones" onclick="rellenarArcSen()">
+                <input type="button" value="arcos" name="arcos" class="Operaciones" onclick="rellenarArcos()()">
+                <input type="button" value="arctan" name="arctan" class="Operaciones" onclick="rellenarArctan()">
             </form>
     </body>
 </html>
