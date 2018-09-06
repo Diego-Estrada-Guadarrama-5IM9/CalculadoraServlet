@@ -28,3 +28,4 @@
             function rellenarArcos () {
                 document.getElementById("operacion").value ="arcos";
             };
+            
