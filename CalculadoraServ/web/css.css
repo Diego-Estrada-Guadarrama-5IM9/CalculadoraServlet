@@ -1,0 +1,13 @@
+body{
+    background: teal;
+}
+.numero{
+    color: red;
+    background: pink;
+}
+.Operaciones{
+    border-width:  10px;
+    padding: 15px;
+    font-size: 15px;
+    background: crimson;
+}
